@@ -1,0 +1,21 @@
+/*-----MAIN-------*/
+html{
+    margin:10px;
+}
+
+nav {
+    width: 75rem;
+    a:hover{
+        color: lighten($secondaryColor, 40%);
+    }
+    .search{
+        float: right;
+    }
+}
+main{
+    max-width: $widest;
+}
+.card-grid{
+    width:100%;
+   grid-template-columns: repeat(4, 1fr);
+}
