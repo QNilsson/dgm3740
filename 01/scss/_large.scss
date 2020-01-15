@@ -5,9 +5,7 @@ html{
 
 nav {
     width: 75rem;
-    a:hover{
-        color: lighten($secondaryColor, 40%);
-    }
+    background-color: $primaryColor;
     .search{
         float: right;
     }

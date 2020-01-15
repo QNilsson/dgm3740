@@ -333,14 +333,20 @@ div#container {
     font-size: 16px;
     font-family: Verdana, sans-serif; }
   div#container .header-wrapper {
-    border: 1px solid red; }
+    border: 1px solid pink;
+    height: 80px; }
+    div#container .header-wrapper .logo {
+      height: 75px;
+      width: 75px;
+      float: left; }
+    div#container .header-wrapper .number {
+      float: right;
+      font-family: "Open Sans", sans-serif;
+      padding-right: 40px; }
   div#container header {
     background-color: #9cc3d5;
     height: 100px;
     color: white; }
-    div#container header img {
-      width: 100%;
-      height: auto; }
 
 h1 {
   margin: 0;
@@ -352,15 +358,19 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  padding-top: 15px;
+  border: 1px solid orange;
+  padding: 3px 0 50px 0;
   width: 100%;
-  display: flex; }
+  display: flex;
+  background-color: #0063B2; }
 
 .nav-md-lg {
-  display: none; }
+  display: none;
+  background-color: #0063B2; }
   .nav-md-lg .items {
     display: flex;
-    width: 100%; }
+    width: 100%;
+    background-color: #0063B2; }
   .nav-md-lg .search {
     width: 100%;
     position: relative;
@@ -398,7 +408,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: #9cc3d5; }
+  background-color: #0063B2; }
   .nav-sm div {
     width: 95%;
     height: 50px;
@@ -457,6 +467,7 @@ nav {
 
 /*----------- MAIN --------------*/
 main {
+  padding-top: 35px;
   max-width: 1200px; }
   main picture {
     width: 100%;
@@ -549,7 +560,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background: #9cc3d5; }
+    background-color: #0063B2; }
     .nav-md-lg a {
       width: 10%;
       height: 100%;
@@ -560,8 +571,6 @@ footer {
       justify-content: center;
       align-items: center;
       border-right: 1px solid white; }
-    .nav-md-lg a:hover {
-      color: white; }
 
   .nav-sm {
     display: none; }
@@ -585,9 +594,8 @@ footer {
     margin: 10px; }
 
   nav {
-    width: 75rem; }
-    nav a:hover {
-      color: white; }
+    width: 75rem;
+    background-color: #0063B2; }
     nav .search {
       float: right; }
 

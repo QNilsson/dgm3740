@@ -13,7 +13,8 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background: $secondaryColor;
+    background-color: $primaryColor;
+    
     a {
       width: 10%;
       height: 100%;
@@ -24,10 +25,9 @@ html {
       justify-content: center;
       align-items: center;
       border-right: 1px solid white;
+      
     }
-    a:hover {
-      color: lighten($secondaryColor, 40%);
-    }
+    
   }
   .nav-sm {
     display: none;
