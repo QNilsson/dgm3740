@@ -306,8 +306,7 @@ template {
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  margin: 10px; }
+  -ms-text-size-adjust: 100%; }
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
@@ -321,19 +320,15 @@ div#container {
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 100px;
   /* height of your footer */
   margin: auto;
   max-width: 1200px;
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/ }
-  div#container #content-wrap {
-    padding-bottom: 2.5rem; }
   div#container body {
     font-size: 16px;
     font-family: Verdana, sans-serif; }
   div#container .header-wrapper {
-    border: 1px solid pink;
     height: 80px; }
     div#container .header-wrapper .logo {
       height: 75px;
@@ -358,7 +353,6 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  border: 1px solid orange;
   padding: 3px 0 50px 0;
   width: 100%;
   display: flex;
@@ -378,20 +372,18 @@ nav {
     margin-right: 40px; }
   .nav-md-lg .searchTerm {
     width: 100%;
-    border: 3px solid #00B4CC;
+    border: 3px solid #9cc3d5;
     border-right: none;
     padding: 5px;
     height: 30px;
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #9DBFAF; }
-  .nav-md-lg .searchTerm:focus {
-    color: #00B4CC; }
   .nav-md-lg .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
+    border: 1px solid #9cc3d5;
+    background: #9cc3d5;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -491,7 +483,8 @@ main {
   width: 95vw;
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5px; }
 
 .card {
   font-family: "Megrim", cursive;
@@ -533,12 +526,16 @@ main {
 footer {
   background-color: #9cc3d5;
   padding: 0.5rem 2%;
-  text-align: center;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
   color: white;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  width: 100%;
-  font-family: "Open Sans", sans-serif; }
+  width: 100%; }
+  footer .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 0 0 20px; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -585,8 +582,20 @@ footer {
   .solid-card img {
     width: 0px; }
 
-  /*----------- FOOTER --------------*/
-  /* end of media query */ }
+  footer {
+    background-color: #9cc3d5;
+    padding: 0.5rem 2%;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%; }
+    footer #footer-text {
+      text-align: center; }
+    footer .grid-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      margin: 0 0 0 50px; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   /*-----MAIN-------*/
@@ -604,5 +613,21 @@ footer {
 
   .card-grid {
     width: 100%;
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+
+  footer {
+    background-color: #9cc3d5;
+    padding: 0.5rem 2%;
+    text-align: left;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%; }
+    footer .grid-container {
+      display: grid;
+      grid-template-columns: 5% 25% 25% 25% 25% 5%;
+      margin: auto; }
+      footer .grid-container p:nth-child(1) {
+        grid-column-start: 2;
+        grid-column-end: 3; } }
 /* end of media query */

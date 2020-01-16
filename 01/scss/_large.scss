@@ -17,3 +17,26 @@ main{
     width:100%;
    grid-template-columns: repeat(4, 1fr);
 }
+
+footer {
+    background-color: $secondaryColor;
+    padding: 0.5rem 2%;
+    text-align: left;
+
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: 5% 25% 25%25% 25%5%;
+      margin: auto;
+  
+      p:nth-child(1) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+    }
+  }

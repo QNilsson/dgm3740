@@ -2,7 +2,7 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    margin: 10px;
+   
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -10,22 +10,20 @@ html {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 
 div#container {
+    
     min-height: 100vh;
     /* will cover the 100% of viewport */
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px;
+    
     /* height of your footer */
     margin: auto;
     max-width: $widest;
-
-    #content-wrap {
-        padding-bottom: 2.5rem;
-    }
 
     /*----------- BODY --------------*/
     body {
@@ -35,8 +33,8 @@ div#container {
 
     /*----------- HEADER --------------*/
    .header-wrapper{
-    border:1px solid pink;
     height:80px;
+
        .logo{
         height:75px;
         width:75px;
@@ -69,7 +67,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-    border:1px solid orange;
+  
     padding:3px 0 50px 0;
     width: 100%;
     display: flex;
@@ -97,7 +95,7 @@ nav {
       
       .searchTerm {
         width: 100%;
-        border: 3px solid #00B4CC;
+        border: 3px solid $secondaryColor;
         border-right: none;
         padding: 5px;
         height: 30px;
@@ -106,15 +104,11 @@ nav {
         color: #9DBFAF;
       }
       
-      .searchTerm:focus{
-        color: #00B4CC;
-      }
-      
       .searchButton {
         width: 40px;
         height: 36px;
-        border: 1px solid #00B4CC;
-        background: #00B4CC;
+        border: 1px solid $secondaryColor;
+        background: $secondaryColor;
         text-align: center;
         color: #fff;
         border-radius: 0 5px 5px 0;
@@ -214,7 +208,7 @@ nav {
 /*----------- MAIN --------------*/
 main {
     padding-top:35px;
-    max-width: 1200px;
+    max-width: $widest;
 
     picture {
         width: 100%;
@@ -245,6 +239,7 @@ main {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr;
+    padding-top:5px;
 }
 
 .card {
@@ -300,13 +295,22 @@ main {
 footer {
     background-color: $secondaryColor;
     padding: 0.5rem 2%;
-    text-align: center;
+    text-align: left;
+    font-family: $body;
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
-    font-family: $body;
-}
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 0 0 20px;
+     
+    }
+  
+     
+  }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
