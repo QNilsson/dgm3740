@@ -68,14 +68,12 @@ div#container {
 
 /*  ------------- NAV -------------  */
 div#navWrapper { 
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     }
   
   
-  /* Overall styling for the NAVIGATION of the document */
-  
   nav {
-      background-color: $secondaryColor;
+      background-color: $primaryColor;
       width: 100%;
   
       button {
@@ -87,6 +85,7 @@ div#navWrapper {
           border: 1px solid rgba(0,0,0,0.2);
           border-radius: 10px;
           margin: 6px 0 6px 2%;
+          cursor: pointer;
       } 
   
       ul.closed {display:none;}
@@ -104,9 +103,13 @@ div#navWrapper {
           font-family: $body;
       }
   
-      ul li.active a {background-color: #00AFA4;}
-  
+      ul li.active a {background-color:#f5aeae;}
+      
+
       ul li ul li a { padding-left: 8%;}
+      ul li ul li a:hover{
+          background-color: lighten($primaryColor, 30%);
+      }
   
       form {
       display: inline-block;
@@ -117,11 +120,12 @@ div#navWrapper {
               margin: .25rem 0 .25rem .25rem;
               height: 30px;
               border-radius: 3px;
+              font-family: $body;
            }
   
           input.magnify {
               float: right;
-              margin: .25rem .25rem .25rem 0;
+              margin: .25rem .25rem .25rem .05rem;
               height: 30px;
               border-radius: 3px;
           }
@@ -132,7 +136,7 @@ div#navWrapper {
 
 /*----------- MAIN --------------*/
 main {
-    padding-top: 49px;
+    
     max-width: $widest;
 
     h1{
@@ -265,6 +269,7 @@ footer {
         button{
             margin-top:7px;
             width:150px;
+            padding:10px;
             background-color:$primaryColor;
             border:none;
             font-family: $body;
