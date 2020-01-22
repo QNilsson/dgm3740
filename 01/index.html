@@ -36,35 +36,41 @@
           <!--srcset="/01/images/logo.png 768w, /01/images/logo.png 1080w"-->
           <img src="images/logo3x.png" srcset="images/logo1x.png 1x, images/logo3x.png 2x, images/logo3x.png 3x"
             class="logo" alt="logo">
-
           <p class="number">(801)443-8774</p>
         </div>
         <!--end header wrapper-->
       </header>
 
 
-      <!-- NAVIGATION HERE -->
-      <nav class="clearfix">
-        <button id="hamburgerBtn">
-          <span><i>&equiv;</i>OPEN</span>
-          <span><i>&otimes;</i>CLOSE</span></button>
+      <!-- NAV STARTS HERE -->
+<div id="navWrapper">
+  <nav class="clearfix">
+     <button id="hamburgerBtn"></button>
 
-        <ul id="primaryNav">
-          <li><a href="#">Home</a></li>
-          <li class="current-menu-item"><a href="#">Products</a></li>
-          <li><a href="#">Sales</a></li>
-          <li class="parent"><a href="#">Location</a>
-            <ul>
-              <li><a href="#">Here</a></li>
-              <li><a href="#">There</a></li>
-              <li><a href="#">Everywhere</a></li>
-            </ul>
-          </li><!--end parent-->
-          <li><a href="#">Contact</a></li>
-        </ul><!--end primarynav-->
+           <ul id="primaryNav" class="closed">
+              <li class="active"><a href="index.php">HOME</a></li>
+              <li><a href="cruises.php">CRUISES</a></li>
+              <li><a href="#">AGENTS</a>
+                 <ul>
+                    <li><a href="agentjane.php">Jane</a></li>
+                    <li><a href="agentbill.php">Bill</a></li>
+                 </ul>
+              </li>
+              <li><a href="book.php">BOOK</a></li>
 
+           </ul>
+           <form action="#">
+             <input class="magnify" type="image" src="images/search.png" alt="Submit">
+          <input class="search" type="text" name="search" placeholder="Search...">
+          
+        </form>
 
-      </nav>
+        <!--<figure class="magnify"><img src="images/search2.png"></figure> -->
+        
+        
+
+  </nav>
+</div>
 
       <!-- CONTENT HERE -->
       <main class="clearfix">
@@ -170,7 +176,7 @@
         <span>
           <strong>News Letter</strong><br>
           <p>Subscribe to our email list and stay up-to-date with our<br>hottest offers and latest specials</p><br>
-          <input type="text"><br><button action="submit">Subscribe</button><br><br>
+          <input type="text" placeholder="example@gmail.com"><br><button action="submit">Subscribe</button><br><br>
         </span>
 
         <span>

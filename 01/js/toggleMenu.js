@@ -1,6 +1,6 @@
-function toggleMenu(){
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-    document.getElementById("primaryNav").classList.toggle("open");
+function toggleMenu() {
+	document.getElementById("primaryNav").classList.toggle("closed");
 }
-var x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu();
+
+var x = document.getElementById("hamburgerBtn");
+x.onclick = toggleMenu;
