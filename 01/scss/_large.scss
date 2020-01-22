@@ -1,42 +1,98 @@
-/*-----MAIN-------*/
-html{
-    margin:10px;
-}
-
+/*  ----------------------- NAVIGATION --------------------------- */
 nav {
-    width: 75rem;
-    background-color: $primaryColor;
-    .search{
-        float: right;
-    }
-}
-main{
+	background-color:$primaryColor;
+
+	// new stuff
+	ul {
+		margin-left: 2%;
+		
+	}
+	ul li {float: left;}
+	ul li a { 
+		display: block;
+		border:none; // undo small screen
+		
+		background: none;
+		font-size: .9em;
+		padding: .9em .9em;
+		color: rgba(255,255,255,1);
+		text-decoration: none;
+		/*transition*/
+		-webkit-transition: background 0.3s linear; 
+		transition: background 0.3s linear;
+	}
+	ul li a:hover {background: darken($primaryColor,5%);}
+	
+	
+	ul li ul { /*rules for the sub menu items*/
+		z-index:99;
+		position: absolute;
+		background-color: lighten($primaryColor, 10%);
+		left: -999em; /* pushes the menu way off to the side */
+		width: 12em;
+	}
+ 	ul li ul li { /* overides the float and line from the parent ul */
+		float: none;
+		border-right: none;
+		border-top: solid 1px rgba(0,0,0,0.2);
+	}
+
+ 	ul li:hover ul { /* this displays the menus as drop downs  */
+		left: auto;
+		margin-left: 0;
+	}
+	
+	li.active a{background-color: rgba(0,0,0,0.25);}
+	
+} // end nav
+
+
+/*-----MAIN-------*/
+
+main {
     max-width: $widest;
 }
-.card-grid{
-    width:100%;
-   grid-template-columns: repeat(4, 1fr);
+
+.card-grid {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 footer {
     background-color: $secondaryColor;
     padding: 0.5rem 2%;
     text-align: left;
-
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
-  
-  
-    .grid-container {
-      display: grid;
-      grid-template-columns: 5% 25% 25%25% 25%5%;
-      margin: auto;
-  
-      p:nth-child(1) {
-        grid-column-start: 2;
-        grid-column-end: 3;
-      }
+
+    .social {
+
+        text-align: center;
+
+        .icons {
+            width: 75%;
+        }
+
+
     }
-  }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        span {
+            margin: 0 0;
+        }
+
+        span:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+}

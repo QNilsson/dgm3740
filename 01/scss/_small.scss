@@ -2,7 +2,8 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-   
+    margin: 0;
+
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -10,205 +11,68 @@ html {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    
+    margin: auto;
+
 }
 
 div#container {
-    
+
     min-height: 100vh;
     /* will cover the 100% of viewport */
     overflow: hidden;
     display: block;
     position: relative;
-    
-    /* height of your footer */
-    margin: auto;
-    max-width: $widest;
+
+    div#content-wrap {
+        padding-bottom: 20px;
+    }
+
+
 
     /*----------- BODY --------------*/
     body {
         font-size: 16px;
         font-family: Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
     /*----------- HEADER --------------*/
-   .header-wrapper{
-    height:80px;
 
-       .logo{
-        height:75px;
-        width:75px;
-        float: left;
-    }
-    .number{
-        float: right;
-        font-family:$body;
-        padding-right:40px;
-    }
-   }
     header {
         background-color: $secondaryColor;
         height: 100px;
         color: white;
-        
+
+
+        .header-wrapper {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .logo {
+                height: 75px;
+                width: 75px;
+                float: left;
+            }
+
+            .number {
+                float: right;
+                font-family: $body;
+                padding-right: 40px;
+            }
+        }
     }
-}
 
-
-h1 {
-    margin: 0;
-    font-family: $title;
-}
-
-header h2 {
-    margin: 0;
-    font-family: $body;
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
-  
-    padding:3px 0 50px 0;
-    width: 100%;
-    display: flex;
-    background-color:$primaryColor;
-}
-
-
-
-.nav-md-lg {
-    display: none;
-    background-color:$primaryColor;
-
-    .items {
-        display: flex;
-        width: 100%;
-        background-color: $primaryColor;
-    }
-
-    .search {
-        width: 100%;
-        position: relative;
-        display: flex;
-        margin-right:40px;
-      }
-      
-      .searchTerm {
-        width: 100%;
-        border: 3px solid $secondaryColor;
-        border-right: none;
-        padding: 5px;
-        height: 30px;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        color: #9DBFAF;
-      }
-      
-      .searchButton {
-        width: 40px;
-        height: 36px;
-        border: 1px solid $secondaryColor;
-        background: $secondaryColor;
-        text-align: center;
-        color: #fff;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-        font-size: 20px;
-      }
-      .wrap{
-        width: 40%;
-        top: 56%;
-       left:80%;
-       
-      }
-
-}
-
-
-
-.nav-sm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: $primaryColor;
-
-    div {
-        width: 95%;
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        #menu {
-            border: none;
-            background: none;
-            font-size: 15pt;
-            font-weight: bold;
-            color: white;
-            cursor: pointer;
-        }
-
-        #x {
-            display: none;
-            border: none;
-            background: none;
-            font-size: 20pt;
-            font-weight: bold;
-            font-family: $body;
-            color: white;
-            transition: ease-in-out 0.2s;
-            cursor: pointer;
-        }
-    }
-
-    #dd-menu {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        border-top: solid 1px white;
-
-        li {
-            width: 100%;
-            height: 50px;
-            border-bottom: solid 1px white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            a {
-                width: 100%;
-                height: 100%;
-                text-decoration: none;
-                color: white;
-                font-family: $body;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            a:hover {
-                color: orange;
-            }
-        }
-    }
-}
-
-.active {
-    background: lighten($secondaryColor, 13%);
-    padding: 5px;
-}
 
 /*----------- MAIN --------------*/
 main {
-    padding-top:35px;
+    padding-top: 49px;
     max-width: $widest;
+
 
     picture {
         width: 100%;
@@ -239,7 +103,8 @@ main {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr;
-    padding-top:5px;
+    padding-top: 5px;
+    margin: auto;
 }
 
 .card {
@@ -295,22 +160,39 @@ main {
 footer {
     background-color: $secondaryColor;
     padding: 0.5rem 2%;
-    text-align: left;
+    text-align: center;
     font-family: $body;
     color: white;
     position: relative;
     bottom: 0;
-    width: 100%;
-  
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: 0 0 0 20px;
-     
+
+    .social {
+        margin-top: 15px;
+
+        .icons {
+            font-size: 22pt;
+            display: flex;
+            max-width: 100%;
+            cursor: pointer;
+
+        }
+
+        .copywrite {
+            padding-top: 10px;
+        }
+
     }
-  
-     
-  }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
