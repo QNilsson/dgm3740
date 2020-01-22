@@ -79,8 +79,6 @@ div#navWrapper {
       width: 100%;
   
       button {
-        //   background-image: url(../images/menuIconWhite.png);
-          background-repeat: no-repeat;
           width: 72px;
           height: 32px;
           background-color: rgba(0,0,0,0.1);
@@ -92,13 +90,18 @@ div#navWrapper {
       } 
   
       ul.closed {display:none;}
-  
+      ul li{
+        text-decoration: none;
+        list-style-type: none;
+      }
       ul li a {
           display: block;
           color: white;
           text-decoration: none;
+          list-style-type: none;
           padding: .7rem 2%;
           border-bottom: solid 1px rgba(0,0,0,0.3);
+          font-family: $body;
       }
   
       ul li.active a {background-color: #00AFA4;}

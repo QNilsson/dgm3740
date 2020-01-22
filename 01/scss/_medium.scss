@@ -11,14 +11,18 @@ nav {
 	button {display: none;}
 	ul.closed{display:block;}
 
-	ul li {float: left;}
+  ul li {float: left;
+    text-decoration: none;
+    list-style-type: none;}
 
 	ul li a {
 		border: none;
 		border-right: 1px solid rgba(0,0,0,0.2);
 		padding: .7rem .9rem;
 		transition: background 0.3s linear;
-		-webkit-transition: background 0.3s linear;
+    -webkit-transition: background 0.3s linear;
+    text-decoration: none;
+    list-style-type: none;
 	}
 
 	ul li ul {
@@ -26,7 +30,9 @@ nav {
 		z-index: 99;
 		background-color: lighten($secondaryColor, 10%);
 		position: absolute;
-		width: 10rem;
+    width: 10rem;
+    text-decoration: none;
+          list-style-type: none;
 	}
 
 	ul li:hover ul {left: auto;}

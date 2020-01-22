@@ -1,15 +1,18 @@
 /*  ----------------------- NAVIGATION --------------------------- */
 /*  ------------- NAVIGATION -------------  */
 nav {
-	max-width: 60rem;
+	max-width: $widest;
 	margin: 0 auto;	
 	padding: 0;
 
 	ul li {
 		float: left;
 		padding: 0;
-		margin-left: 0;
-	}
+        margin-left: 0;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
 		input.magnify {
 			float: right;
 			margin: .25rem 0 .25rem 0 !important;
