@@ -7,47 +7,62 @@
 
 nav {
 
-	position: relative;
-	button {display: none;}
-	ul.closed{display:block;}
+  position: relative;
 
-  ul li {float: left;
+  button {
+    display: none;
+  }
+
+  ul.closed {
+    display: block;
+  }
+
+  ul li {
+    float: left;
     text-decoration: none;
-    list-style-type: none;}
+    list-style-type: none;
+  }
 
-	ul li a {
-		border: none;
-		border-right: 1px solid rgba(0,0,0,0.2);
-		padding: .7rem .9rem;
-		transition: background 0.3s linear;
+  ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .7rem .9rem;
+    transition: background 0.3s linear;
     -webkit-transition: background 0.3s linear;
     text-decoration: none;
     list-style-type: none;
-	}
+  }
 
-	ul li ul {
-		left: -999em;
-		z-index: 99;
-		background-color: lighten($secondaryColor, 10%);
-		position: absolute;
+  ul li ul {
+    left: -999em;
+    z-index: 99;
+    background-color: lighten($secondaryColor, 10%);
+    position: absolute;
     width: 10rem;
     text-decoration: none;
-          list-style-type: none;
-	}
+    list-style-type: none;
+  }
 
-	ul li:hover ul {left: auto;}
-	ul li a:hover {background-color: darken($secondaryColor, 10%);}
+  ul li:hover ul {
+    left: auto;
+  }
 
-
-	ul li ul li {
-		float: none;
-		border-bottom: 1px solid rgba(0,0,0,0.2);
-	}
-
+  ul li a:hover {
+    background-color: darken($secondaryColor, 10%);
+  }
 
 
+  ul li ul li {
+    float: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
 
-}//end nav
+
+
+
+}
+
+//end nav
 
 
 
@@ -84,23 +99,43 @@ footer {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
-    
+
+
     span:nth-child(1) {
-     
+
       grid-column-start: 1;
       grid-column-end: 2;
-  }
-  
-  span:nth-child(3){
-    
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
+    }
+
+    span:nth-child(3) {
+
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
 
   }
 
   //end grid container
 }
 
-//end footer
+
+/*--------------------AGENT 1 PAGE---------------------*/
+.agent-info {
+  font-family: $body;
+  margin: auto;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "one two""three three";
+
+
+  .agentPhoto {
+    grid-area: two;
+  }
+
+  .details {
+    float: left;
+
+  }
+}
