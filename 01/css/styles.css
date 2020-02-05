@@ -535,6 +535,30 @@ footer {
       color: white;
       cursor: pointer; }
 
+/*---------------------------CRUISE PAGE----------------------*/
+.cruise-container .cruisephoto {
+  width: 100%; }
+.cruise-container button, .cruise-container h2, .cruise-container p, .cruise-container img {
+  margin-bottom: 10px; }
+.cruise-container img {
+  margin-top: 20px; }
+.cruise-container button {
+  width: 100%;
+  border-radius: 20px;
+  height: 44px;
+  background-color: #9cc3d5;
+  color: white;
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif; }
+  .cruise-container button:hover {
+    cursor: pointer; }
+.cruise-container h2 {
+  font-size: 1.2em;
+  font-family: "Megrim", cursive; }
+.cruise-container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: medium; }
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
@@ -620,7 +644,24 @@ footer {
     .agent-info .agentPhoto {
       grid-area: two; }
     .agent-info .details {
-      float: left; } }
+      float: left; }
+
+  /*------------------------CRUISE PAGE---------------*/
+  .cruise-container {
+    display: flex;
+    justify-content: flex-start; }
+    .cruise-container .cruisephoto {
+      width: 30%;
+      height: auto;
+      padding-right: 20px; }
+    .cruise-container div {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start; }
+      .cruise-container div button {
+        width: 30%;
+        align-self: flex-end;
+        font-size: medium; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   /*  ----------------------- NAVIGATION --------------------------- */
@@ -680,7 +721,7 @@ footer {
         grid-column-start: 3;
         grid-column-end: 3; }
 
-  /*--------------------AGENT 1 PAGE---------------------*/
+  /*--------------------AGENTS PAGE---------------------*/
   .agent-info {
     font-family: "Open Sans", sans-serif;
     margin: auto;
@@ -692,5 +733,9 @@ footer {
     .agent-info .agentPhoto {
       grid-area: two; }
     .agent-info .details {
-      float: left; } }
+      float: left; }
+
+  /*--------------------------CRUISE PAGE-------------------------------*/
+  .cruise-container h2 {
+    font-family: "Megrim", cursive; } }
 /* end of media query */

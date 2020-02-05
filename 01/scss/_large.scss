@@ -90,7 +90,7 @@ footer {
     }
 }
 
-/*--------------------AGENT 1 PAGE---------------------*/
+/*--------------------AGENTS PAGE---------------------*/
 .agent-info {
     font-family: $body;
     margin: auto;
@@ -109,4 +109,14 @@ footer {
       float: left;
   
     }
+  }
+
+  /*--------------------------CRUISE PAGE-------------------------------*/
+  
+    .cruise-container{
+          h2{
+              font-family: $title;
+             
+          }
+      
   }

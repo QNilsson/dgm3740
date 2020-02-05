@@ -338,6 +338,41 @@ footer {
 
 }
 
+/*---------------------------CRUISE PAGE----------------------*/
+.cruise-container{
+    
+         .cruisephoto{
+             width:100%;
+         }
+         button,h2,p,img{
+             margin-bottom: 10px;
+         }
+         img{
+             margin-top:20px;
+         }
+         button{
+             width:100%;
+             border-radius: 20px;
+             height:44px;
+             background-color:$secondaryColor;
+             color:white;
+             font-size: 1.25rem;
+             font-family: $body;
+             &:hover{
+                 cursor: pointer;
+             }
+         }
+         h2{
+             font-size: 1.2em;
+             font-family: $title;
+         }
+         p{
+             font-family:$body;
+             font-size: medium;
+         }
+    
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

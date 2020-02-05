@@ -139,3 +139,27 @@ footer {
 
   }
 }
+
+/*------------------------CRUISE PAGE---------------*/
+.cruise-container{
+  display: flex;
+ justify-content: flex-start;
+ 
+
+  .cruisephoto{
+    width:30%;
+    height:auto;
+    padding-right:20px;
+  }
+  div {
+    display: flex;
+    flex-direction:column;
+  align-content: flex-start;
+   
+    button {
+      width: 30%;
+      align-self: flex-end;
+      font-size: medium;
+    }
+  }
+}
