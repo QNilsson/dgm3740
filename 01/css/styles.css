@@ -472,7 +472,7 @@ main {
     -webkit-transform: scale(1.01);
     transform: scale(1.01); }
 
-/*--------------------AGENT 1 PAGE---------------------*/
+/*--------------------AGENT  PAGE---------------------*/
 .agent-info {
   font-family: "Open Sans", sans-serif;
   margin: auto;
@@ -483,6 +483,33 @@ main {
     float: right;
     width: 100%;
     height: auto; }
+
+/*--------------------BOOKING PAGE-------------------------*/
+main {
+  max-width: 1200px; }
+  main form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: "Open Sans", sans-serif; }
+    main form input[type=text], main form input[type=number], main form select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; }
+    main form input[type=submit] {
+      width: 100%;
+      background-color: #0063B2;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      font-family: "Open Sans", sans-serif;
+      cursor: pointer; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -632,7 +659,7 @@ footer {
         grid-column-start: 1;
         grid-column-end: 3; }
 
-  /*--------------------AGENT 1 PAGE---------------------*/
+  /*--------------------AGENT PAGE---------------------*/
   .agent-info {
     font-family: "Open Sans", sans-serif;
     margin: auto;
@@ -644,6 +671,13 @@ footer {
     .agent-info .agentPhoto {
       grid-area: two; }
     .agent-info .details {
+      float: left; }
+
+  /*--------------------------BOOKING PAGE-------------------*/
+  main {
+    max-width: 1200px; }
+    main form {
+      width: 50%;
       float: left; }
 
   /*------------------------CRUISE PAGE---------------*/
@@ -734,6 +768,12 @@ footer {
       grid-area: two; }
     .agent-info .details {
       float: left; }
+
+  /*------------------------------BOOKING PAGE--------------------------*/
+  main {
+    max-width: 1200px; }
+    main form {
+      width: 33%; }
 
   /*--------------------------CRUISE PAGE-------------------------------*/
   .cruise-container h2 {

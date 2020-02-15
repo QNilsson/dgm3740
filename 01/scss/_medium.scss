@@ -119,7 +119,7 @@ footer {
 }
 
 
-/*--------------------AGENT 1 PAGE---------------------*/
+/*--------------------AGENT PAGE---------------------*/
 .agent-info {
   font-family: $body;
   margin: auto;
@@ -137,6 +137,14 @@ footer {
   .details {
     float: left;
 
+  }
+}
+/*--------------------------BOOKING PAGE-------------------*/
+main{
+  max-width: $widest;
+  form{
+    width:50%;
+    float:left;
   }
 }
 
