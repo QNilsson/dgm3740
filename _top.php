@@ -1,3 +1,4 @@
+
 <header class="clearfix">
         <div class="header-wrapper">
           <!--srcset="/01/images/logo.png 768w, /01/images/logo.png 1080w"-->
@@ -17,14 +18,14 @@
 
            <ul id="primaryNav" class="closed">
               <li class="active"><a href="index.php">HOME</a></li>
-              <li><a href="cruises.php">CRUISES</a></li>
+              <li><a href="cruise.php">CRUISES</a></li>
               <li><a href="#">AGENTS</a>
                  <ul>
-                    <li><a href="agentperi.php">Peri Mason</a></li>
-                    <li><a href="agentdyl.php">Dylan Shomeyer</a></li>
+                    <li><a href="agent1.php">Peri Mason</a></li>
+                    <li><a href="agent2.php">Dylan Shomeyer</a></li>
                  </ul>
               </li>
-              <li><a href="book.php">BOOK</a></li>
+              <li><a href="booking.php">BOOK</a></li>
 
            </ul>
            <form action="#">

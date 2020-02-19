@@ -33,7 +33,7 @@
      include '_top.php'; 
      ?> 
 
-    <main>
+    <main class="clearfix">
         <h1>Agent Dylan Shomeyer</h1>
         <div class="agent-info">
             <img class="agentPhoto" src="/images/agent2.jpeg" alt="">

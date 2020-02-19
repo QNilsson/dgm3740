@@ -13,7 +13,7 @@
 
   <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
   <!-- This start file was build by Paul Cheney  -->
-  <title><?php echo $title; ?></title>
+  <title>Cabot Cruises<?php echo $title; ?></title>
 
   <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -27,7 +27,9 @@
 </head>
 
 <body id="top">
-  <?php $title="Cabot Cruises | Home";?>
+<?php $title="Cabot Cruises | Home"; 
+     include '_top.php'
+     ?> 
  
       <!-- HEADER HERE -->
 

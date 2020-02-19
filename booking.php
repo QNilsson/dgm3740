@@ -33,7 +33,7 @@
     include '_top.php'; 
     ?> 
 
-<main>
+<main class="clearfix">
     <h1>Book a Cruise</h1>
 <form>
     <label for="fname">Full Name</label><br>
@@ -114,7 +114,7 @@
 </form>
 
 </main>
-     <!-- <?php include '_bot.php'; ?> -->
+     <?php include '_bot.php'; ?> 
 
      <script type="application/ld+json">
         {

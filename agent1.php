@@ -32,7 +32,7 @@
      include '_top.php'
      ?> 
 
-    <main>
+    <main class="clearfix">
         <h1>Agent Peri Mason</h1>
         <div class="agent-info">
             <img class="agentPhoto" src="/images/agent1.jpeg" alt="">
