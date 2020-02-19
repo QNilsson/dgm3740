@@ -20,8 +20,8 @@
               <li><a href="cruises.php">CRUISES</a></li>
               <li><a href="#">AGENTS</a>
                  <ul>
-                    <li><a href="agentjane.php">Cody Banks</a></li>
-                    <li><a href="agentbill.php">Perry the Platypus</a></li>
+                    <li><a href="agentperi.php">Peri Mason</a></li>
+                    <li><a href="agentdyl.php">Dylan Shomeyer</a></li>
                  </ul>
               </li>
               <li><a href="book.php">BOOK</a></li>

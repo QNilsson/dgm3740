@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Fill Me In" />
+  <meta name="author" content="Quinn Nilsson" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+
+
+  <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
+  <!-- This start file was build by Paul Cheney  -->
+  <title><?php echo $title; ?></title>
+
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- STYLE SHEETS -->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="slick/slick.css" rel="stylesheet" />
+  <link href="slick/slick-theme.css" rel="stylesheet" />
+  <link href="css/fontawesome-all.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body id="top">
+
+    <!-- <?php $title="Agents"; ?> -->
+
+    <main>
+        <h1>Agent Peri Mason</h1>
+        <div class="agent-info">
+            <img class="agentPhoto" src="/images/agent1.jpeg" alt="">
+            <div class="details">
+            <h3>Phone:</h3>
+            1-800-555-1234 ext 12<br>
+            <br>
+            <h3>Working:<br></h3>
+            Monday, Wednesday, Friday<br>
+            <br>
+           <h3>Destination Specialization:</h3>
+            Hawaii, Cuba, Panama, Brazil, Caribbean, Mexico, Florida, California<br>
+            <br>
+           <h3>Office Hours:<br></h3>
+            8:00am-6:00pm<br>
+            <br>
+            <h3>Biography<br></h3>
+            I have loved travel all my life. At the age of 12 I asked if I could fly all by myself to Hawaii and never come back. 
+            <br><br>
+            Right out of high school I started into travel school and have had the opportunity to work in many aspects of the industry. In every 
+            aspect I have worked I have had the opportunity to help people travel, to help fulfill people's dreams. What could be better to do everyday?
+            <br><br>
+            <h3>Customer Comments:<br></h3>
+            "Thank you Peri for all your plannin efforts to ensure that we could enjoy our tour and bring back such wonderful memories."
+            <br>-The Smiths<br><br>
+            "Thank you for your cheery attitude and hard work during the planning of our tour!"<br>
+            -The Freemans<br><br>
+            "Thank you for planning the best vacation of my life!"<br>
+            -Jordan S
+
+        </div>
+
+    </div>
+    </main>
+
+    <!-- <?php include '_bot.php'; ?> -->
+
+    <script  type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "TravelAgency",
+          "name": "Cabot Cruises",
+          "description": "Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.",
+          "openingHours": "Mo-Fr 09:00-16:00",
+          "telephone": "5555555555",
+          "faxNumber":"+1385559876",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main St",
+            "addressLocality": "Orlando",
+            "addressRegion": "FL"
+          },
+          "image": "http://fullpath.com/logo1x.png",
+          "priceRange":"$500 to $4000"
+        }
+    }
+      </script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script src="js/toggleMenu.js"></script>
+      <script>
+        $(document).ready(function () {
+          $(".mySlider").slick({
+            autoplay: true,
+            dots: true,
+            arrows: false,
+            cssEase: "ease-out",
+            speed: 1000,
+            fade: false,
+            autoplaySpeed: 5000
+          });
+        });
+      </script>
+      
+    </body>
+    
+    </html>
