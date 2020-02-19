@@ -13,7 +13,7 @@
 
   <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
   <!-- This start file was build by Paul Cheney  -->
-  <title><?php echo $title; ?></title>
+  <title>CABOT CRUISES: <?php echo $title; ?></title>
 
   <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -28,12 +28,14 @@
 
 <body id="top">
 
-    <!-- <?php $title="Agents"; ?> -->
+     <?php $title="Agents"; 
+     include '_top.php'
+     ?> 
 
     <main>
-        <h1>Agent Dylan Shomeyer</h1>
+        <h1>Agent Peri Mason</h1>
         <div class="agent-info">
-            <img class="agentPhoto" src="/images/agent2.jpeg" alt="">
+            <img class="agentPhoto" src="/images/agent1.jpeg" alt="">
             <div class="details">
             <h3>Phone:</h3>
             1-800-555-1234 ext 12<br>
@@ -54,7 +56,7 @@
             aspect I have worked I have had the opportunity to help people travel, to help fulfill people's dreams. What could be better to do everyday?
             <br><br>
             <h3>Customer Comments:<br></h3>
-            "Thank you Dylan for all your plannin efforts to ensure that we could enjoy our tour and bring back such wonderful memories."
+            "Thank you Peri for all your plannin efforts to ensure that we could enjoy our tour and bring back such wonderful memories."
             <br>-The Smiths<br><br>
             "Thank you for your cheery attitude and hard work during the planning of our tour!"<br>
             -The Freemans<br><br>
@@ -66,7 +68,7 @@
     </div>
     </main>
 
-    <!-- <?php include '_bot.php'; ?> -->
+     <?php include '_bot.php'; ?> 
 
     <script  type="application/ld+json">
         {

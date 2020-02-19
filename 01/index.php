@@ -28,14 +28,15 @@
 
 <body id="top">
   <?php $title="Cabot Cruises | Home";?>
-  <div id="container">
-    <div id="content-wrap">
+ 
       <!-- HEADER HERE -->
 
      
 
       <!-- CONTENT HERE -->
       <main class="clearfix">
+      <div id="container">
+    <div id="content-wrap">
         <div class="mySlider">
           <picture>
             <source srcset="images/cruise1.jpeg" media="(min-width: 680px)"/>
@@ -118,10 +119,10 @@
           <!--end card-->
         </div>
         <!--end card grid-->
-
-      </main>
-    </div>
+        </div>
 </div>
+      </main>
+
 
     <?php include '_bot.php'; ?>
     <!--end content wrap-->

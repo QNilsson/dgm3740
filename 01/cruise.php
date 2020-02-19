@@ -13,7 +13,7 @@
 
     <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
     <!-- This start file was build by Paul Cheney  -->
-    <title><?php echo $title; ?></title>
+    <title>CABOT CRUISES: <?php echo $title; ?></title>
 
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -28,7 +28,10 @@
 
 <body id="top">
 
-    <!-- <?php $title="Cruise"; ?> -->
+     <?php 
+     $title="Cruise"; 
+     include '_top.php';
+     ?> 
     <main>
         <h1>Cruises</h1>
         <div class="cruise-container">
@@ -87,7 +90,7 @@
 
     </main>
 
-    <!-- <?php include '_bot.php'; ?> -->
+    <?php include '_bot.php'; ?> 
 
     <script type="application/ld+json">
         {
