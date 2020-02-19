@@ -346,12 +346,7 @@ div#container {
       div#container header .header-wrapper .number {
         float: right;
         font-family: "Open Sans", sans-serif;
-        padding-right: 40px;
-        margin-top: 50px;
-        text-decoration: none; }
-        div#container header .header-wrapper .number a {
-          text-decoration: none;
-          color: #0063B2; }
+        padding-right: 40px; }
 
 /*  ------------- NAV -------------  */
 div#navWrapper {
@@ -385,8 +380,6 @@ nav {
     font-family: "Open Sans", sans-serif; }
   nav ul li.active a {
     background-color: #f5aeae; }
-  nav .parent {
-    background: blue; }
   nav ul li ul li a {
     padding-left: 8%; }
   nav ul li ul li a:hover {
@@ -474,45 +467,6 @@ main {
     -webkit-transform: scale(1.01);
     transform: scale(1.01); }
 
-/*--------------------AGENT  PAGE---------------------*/
-.agent-info {
-  font-family: "Open Sans", sans-serif;
-  margin: auto;
-  padding: 5px; }
-  .agent-info .details {
-    float: left; }
-  .agent-info .agentPhoto {
-    float: right;
-    width: 100%;
-    height: auto; }
-
-/*--------------------BOOKING PAGE-------------------------*/
-main {
-  max-width: 1200px; }
-  main form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    font-family: "Open Sans", sans-serif; }
-    main form input[type=text], main form input[type=number], main form select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box; }
-    main form input[type=submit] {
-      width: 100%;
-      background-color: #0063B2;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      font-family: "Open Sans", sans-serif;
-      cursor: pointer; }
-
 /*----------- FOOTER --------------*/
 footer {
   background-color: #9cc3d5;
@@ -521,23 +475,16 @@ footer {
   font-family: "Open Sans", sans-serif;
   color: white;
   position: relative;
-  bottom: 0;
-  align-items: center; }
-  footer .copywrite {
-    text-align: center;
-    max-width: 100vw; }
+  bottom: 0; }
   footer .social {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-around;
-    width: 50%; }
-    footer .social .fab {
+    margin-top: 15px; }
+    footer .social .icons {
       font-size: 22pt;
+      display: flex;
       max-width: 100%;
-      cursor: pointer;
-      display: flex; }
-      footer .social .fab:hover {
-        color: black; }
+      cursor: pointer; }
+    footer .social .copywrite {
+      padding-top: 10px; }
   footer .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -545,12 +492,6 @@ footer {
     text-align: left; }
     footer .grid-container span {
       margin: 0; }
-      footer .grid-container span .number {
-        font-family: "Open Sans", sans-serif;
-        text-decoration: underline; }
-        footer .grid-container span .number a {
-          text-decoration: none;
-          color: #0063B2; }
     footer .grid-container input {
       width: 100%;
       margin-right: 10px; }
@@ -563,30 +504,6 @@ footer {
       font-family: "Open Sans", sans-serif;
       color: white;
       cursor: pointer; }
-
-/*---------------------------CRUISE PAGE----------------------*/
-.cruise-container .cruisephoto {
-  width: 100%; }
-.cruise-container button, .cruise-container h2, .cruise-container p, .cruise-container img {
-  margin-bottom: 10px; }
-.cruise-container img {
-  margin-top: 20px; }
-.cruise-container button {
-  width: 100%;
-  border-radius: 20px;
-  height: 44px;
-  background-color: #9cc3d5;
-  color: white;
-  font-size: 1.25rem;
-  font-family: "Open Sans", sans-serif; }
-  .cruise-container button:hover {
-    cursor: pointer; }
-.cruise-container h2 {
-  font-size: 1.2em;
-  font-family: "Megrim", cursive; }
-.cruise-container p {
-  font-family: "Open Sans", sans-serif;
-  font-size: medium; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -659,45 +576,7 @@ footer {
         grid-column-end: 2; }
       footer .grid-container span:nth-child(3) {
         grid-column-start: 1;
-        grid-column-end: 3; }
-
-  /*--------------------AGENT PAGE---------------------*/
-  .agent-info {
-    font-family: "Open Sans", sans-serif;
-    margin: auto;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "one two" "three three"; }
-    .agent-info .agentPhoto {
-      grid-area: two; }
-    .agent-info .details {
-      float: left; }
-
-  /*--------------------------BOOKING PAGE-------------------*/
-  main {
-    max-width: 1200px; }
-    main form {
-      width: 50%;
-      float: left; }
-
-  /*------------------------CRUISE PAGE---------------*/
-  .cruise-container {
-    display: flex;
-    justify-content: flex-start; }
-    .cruise-container .cruisephoto {
-      width: 30%;
-      height: auto;
-      padding-right: 20px; }
-    .cruise-container div {
-      display: flex;
-      flex-direction: column;
-      align-content: flex-start; }
-      .cruise-container div button {
-        width: 30%;
-        align-self: flex-end;
-        font-size: medium; } }
+        grid-column-end: 3; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   /*  ----------------------- NAVIGATION --------------------------- */
@@ -740,7 +619,7 @@ footer {
         width: 75%; }
     footer .grid-container {
       display: grid;
-      grid-template-columns: 30% 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto; }
@@ -748,36 +627,11 @@ footer {
         width: 75%;
         margin-right: 10px; }
       footer .grid-container span {
-        margin: 0 0;
-        text-align: center; }
+        margin: 0 0; }
       footer .grid-container span:nth-child(1) {
         grid-column-start: 1;
         grid-column-end: 2; }
       footer .grid-container span:nth-child(3) {
         grid-column-start: 3;
-        grid-column-end: 3; }
-
-  /*--------------------AGENTS PAGE---------------------*/
-  .agent-info {
-    font-family: "Open Sans", sans-serif;
-    margin: auto;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "one two" "three three"; }
-    .agent-info .agentPhoto {
-      grid-area: two; }
-    .agent-info .details {
-      float: left; }
-
-  /*------------------------------BOOKING PAGE--------------------------*/
-  main {
-    max-width: 1200px; }
-    main form {
-      width: 33%; }
-
-  /*--------------------------CRUISE PAGE-------------------------------*/
-  .cruise-container h2 {
-    font-family: "Megrim", cursive; } }
+        grid-column-end: 3; } }
 /* end of media query */

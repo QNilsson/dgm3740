@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Fill Me In" />
+  <meta name="author" content="Quinn Nilsson" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+
+
+  <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
+  <!-- This start file was build by Paul Cheney  -->
+  <title>Cabot Cruises</title>
+
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- STYLE SHEETS -->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="slick/slick.css" rel="stylesheet" />
+  <link href="slick/slick-theme.css" rel="stylesheet" />
+  <link href="css/fontawesome-all.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="content-wrap">
+      <!-- HEADER HERE -->
+
+      <header class="clearfix">
+        <div class="header-wrapper">
+          <!--srcset="/01/images/logo.png 768w, /01/images/logo.png 1080w"-->
+          <img src="images/logo3x.png" srcset="images/logo1x.png 1x, images/logo3x.png 2x, images/logo3x.png 3x"
+            class="logo" alt="logo">
+          <p class="number">(801)443-8774</p>
+        </div>
+        <!--end header wrapper-->
+      </header>
+
+
+      <!-- NAV STARTS HERE -->
+<div id="navWrapper">
+  <nav class="clearfix">
+     <button id="hamburgerBtn">&#x2630;</button>
+
+           <ul id="primaryNav" class="closed">
+              <li class="active"><a href="index.php">HOME</a></li>
+              <li><a href="cruises.php">CRUISES</a></li>
+              <li><a href="#">AGENTS</a>
+                 <ul>
+                    <li><a href="agentjane.php">Cody Banks</a></li>
+                    <li><a href="agentbill.php">Perry the Platypus</a></li>
+                 </ul>
+              </li>
+              <li><a href="book.php">BOOK</a></li>
+
+           </ul>
+           <form action="#">
+             <input class="magnify" type="image" src="images/search.png" alt="Submit">
+          <input class="search" type="text" name="search" placeholder="Search...">
+          
+        </form>
+
+        <!--<figure class="magnify"><img src="images/search2.png"></figure> -->
+        
+        
+
+  </nav>
+</div>
+
+      <!-- CONTENT HERE -->
+      <main class="clearfix">
+        <div class="mySlider">
+          <picture>
+            <source src="images/cruise1.jpeg" />
+            <img srcset="images/cruise1.jpeg" alt="1st slider photo" />
+
+          </picture>
+
+          <picture>
+            <source src="images/cruise1.jpg" />
+            <img srcset="images/cruise1.jpg" alt="2nd slider photo" />
+
+          </picture>
+          <picture>
+            <source src="images/cruise3.jpg" />
+            <img srcset="images/cruise3.jpg" alt="3rd slider photo" />
+
+          </picture>
+          <picture>
+            <source src="images/cruise4.jpg" />
+            <img srcset="images/cruise4.jpg" alt="4th slider photo" />
+
+          </picture>
+          <picture>
+            <source src="images/cruise5.png" />
+            <img srcset="images/cruise5.png" alt="1st slider photo" />
+
+          </picture>
+        </div>
+        <!--end slider class-->
+        <span>
+          <h1>Recent Blog Articles</h1>
+        </span>
+        <div class="card-grid">
+
+          <div class="card">
+            <figure class=" card card1">
+              <a href="">
+                <img src="images/excursion.jpg" alt="Snorkel with exotic fish">
+                <p>adventure</p>
+                <figcaption>FEB 29, 2019</figcaption>
+              </a>
+            </figure>
+          </div>
+          <!--end card-->
+
+          <div class="card">
+            <figure class="card card2">
+              <a href="">
+                <img src="images/food.jpg" alt="Gourmet food">
+                <p>cruise cuisine</p>
+                <figcaption>MAR 17, 2019</figcaption>
+              </a>
+            </figure>
+          </div>
+          <!--end card-->
+
+          <div class="card">
+            <figure class="card card3">
+              <a href="">
+                <img src="images/fun.jpg" alt="Fun Onboard">
+                <p>fun onboard</p>
+                <figcaption>JUN 4, 2019</figcaption>
+              </a>
+            </figure>
+          </div>
+          <!--end card-->
+          <div class="card">
+            <figure class="card card4">
+              <a href="">
+                <img src="images/talent.jpg" alt="Nightime shows">
+                <p>night life</p>
+                <figcaption>AUG 2, 2019</figcaption>
+              </a>
+            </figure>
+          </div>
+          <!--end card-->
+        </div>
+        <!--end card grid-->
+
+      </main>
+    </div>
+    <!--end content wrap-->
+    <!-- FOOTER HERE -->
+    <footer>
+      <div class="grid-container">
+        <span>
+          <strong>Contact Us</strong><br><br>
+          CABOT CRUISES <br />
+          23 South Main St Suite 16 <br />
+          Lexington, VA 24450 <br />
+          <br />
+          <strong>Phone:</strong><br />
+          <p>1-800-555-1234</p>
+          <br />
+          <br>
+          <strong>Hours of Operation</strong><br>
+          <p>Monday - Friday 9am - 4pm</p>
+        </span>
+
+        <span>
+          <strong>News Letter</strong><br>
+          <p>Subscribe to our email list and stay up-to-date with our<br>hottest offers and latest specials</p><br>
+          <input type="text" placeholder="example@gmail.com"><br><button action="submit">Subscribe</button><br><br>
+        </span>
+
+        <span>
+          <strong>Why Cabot Cruises</strong><br><br>
+          <p>Cabot Cruises is a travel agency providing the best cruise deals
+            on our online travel website. We can help you with all inclusive vacations
+            including discounted cruises. <br>
+            We do not sell to travel residents of Delaware, Iowa, Florida, Hawaii and
+            Washington state because those states are just weird. If you are a resident of one of those states,
+            call your congressman and tell him to change the regulations.
+          </p>
+        </span>
+
+      </div>
+      <!--end grid container-->
+      <div class="social">
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="far fa-thumbs-up"></i>
+        </div>
+        <div class="copywrite">
+          <p id="footer-text">&#169; 2020 Quinn Nilsson DGM2740</p>
+        </div>
+      </div>
+      <!--end social-->
+    </footer>
+  </div>
+  <!--end container-->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".mySlider").slick({
+        autoplay: true,
+        dots: true,
+        arrows: false,
+        cssEase: "ease-out",
+        speed: 1000,
+        fade: false,
+        autoplaySpeed: 5000
+      });
+    });
+  </script>
+  <script src="js/toggleMenu.js"></script>
+</body>
+
+</html>

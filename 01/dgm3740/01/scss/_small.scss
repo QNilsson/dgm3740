@@ -1,0 +1,290 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+div#container {
+
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+
+    div#content-wrap {
+        padding-bottom: 20px;
+    }
+
+
+
+    /*----------- BODY --------------*/
+    body {
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*----------- HEADER --------------*/
+
+    header {
+        background-color: $secondaryColor;
+        height: 100px;
+        color: white;
+
+
+        .header-wrapper {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .logo {
+                height: 75px;
+                width: 75px;
+                float: left;
+            }
+
+            .number {
+                float: right;
+                font-family: $body;
+                padding-right: 40px;
+            }
+        }
+    }
+
+}
+
+/*  ------------- NAV -------------  */
+div#navWrapper { 
+    background-color: $primaryColor;
+    }
+  
+  
+  nav {
+      background-color: $primaryColor;
+      width: 100%;
+  
+      button {
+          width: 72px;
+          height: 32px;
+          background-color: rgba(0,0,0,0.1);
+          background-size: 86%;
+          background-position: center center;
+          border: 1px solid rgba(0,0,0,0.2);
+          border-radius: 10px;
+          margin: 6px 0 6px 2%;
+          cursor: pointer;
+      } 
+  
+      ul.closed {display:none;}
+      ul li{
+        text-decoration: none;
+        list-style-type: none;
+      }
+      ul li a {
+          display: block;
+          color: white;
+          text-decoration: none;
+          list-style-type: none;
+          padding: .7rem 2%;
+          border-bottom: solid 1px rgba(0,0,0,0.3);
+          font-family: $body;
+      }
+  
+      ul li.active a {background-color:#f5aeae;}
+      
+
+      ul li ul li a { padding-left: 8%;}
+      ul li ul li a:hover{
+          background-color: lighten($primaryColor, 30%);
+      }
+  
+      form {
+      display: inline-block;
+      vertical-align: top;
+      float:right;
+          input.search {
+              float: right;
+              margin: .25rem 0 .25rem .25rem;
+              height: 30px;
+              border-radius: 3px;
+              font-family: $body;
+           }
+  
+          input.magnify {
+              float: right;
+              margin: .25rem .25rem .25rem .05rem;
+              height: 30px;
+              border-radius: 3px;
+          }
+      }
+  
+  } // end nav
+  
+
+/*----------- MAIN --------------*/
+main {
+    
+    max-width: $widest;
+
+    h1{
+        font-family: $title;;
+    }
+
+    picture {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        div {
+            font-family: $body;
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            /* Fallback color */
+            background: rgba(0, 0, 0, 0.5);
+            /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}
+
+.card-grid {
+    width: 95vw;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5px;
+    margin: auto;
+}
+
+.card {
+
+    font-family: $title;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform .2s;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        padding: 10px 0px;
+        position: absolute;
+        bottom: 2px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        position: absolute;
+        top: 2px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    &:hover {
+        -ms-transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01);
+    }
+
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $secondaryColor;
+    padding: 0.5rem 2%;
+    text-align: center;
+    font-family: $body;
+    color: white;
+    position: relative;
+    bottom: 0;
+
+    .social {
+        margin-top: 15px;
+
+        .icons {
+            font-size: 22pt;
+            display: flex;
+            max-width: 100%;
+            cursor: pointer;
+
+        }
+
+        .copywrite {
+            padding-top: 10px;
+        }
+
+    }
+
+    .grid-container {
+        display: grid;
+         grid-template-columns: 1fr;
+        max-width: 1200px;
+        text-align: left;
+    
+        span{
+            margin:0;
+        }
+    
+        input{
+            width:100%;
+            margin-right:10px;
+        }
+        button{
+            margin-top:7px;
+            width:150px;
+            padding:10px;
+            background-color:$primaryColor;
+            border:none;
+            font-family: $body;
+            color:white;
+            cursor: pointer;
+        }
+        
+    }
+
+
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
