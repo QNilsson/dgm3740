@@ -1,51 +1,43 @@
-// Javascript Document
+// JavaScript Document
 /* jslint browser:true */
+"use strict";
+let found = false;
+(function () {
+let elements = document.querySelectorAll("#primaryNav li a");
+let getPageName = function (str) {
+    let queryIgnore = /\/+|[?\#].*$/;
+    let parts = str.split(queryIgnore);
+    let pageName;
+    while (!pageName && parts.length) pageName = parts.pop();
+    return pageName;
+};
+let setParent = function (element) {
+    let listElement = element.parentNode;
+    if (listElement.tagName == "UL" && listElement.id != 'primaryNav') {
+        listElement.parentNode.classList.add("parent");
+    }
+};
+let pageName = getPageName(document.location.href);
+console.log(pageName)
+// if (pageName !== ""){
+    for (let i = 0, len = elements.length; i < len; ++i) {
+        let element = elements[i];
+        let parent = element.parentNode;
 
-
-var nav = document.getElementById("primaryNav");
-var btns = 
-nav.getElementsByClassName("li");
-for(var i = 0; i < btns.length; i++){
-	btns[i].addEventListener("click", function(){
-		var current = 
-		document.getElementsByClassName("active");
-		current[0].className = 
-		current[0].className.replace(" active", "");
-		this.className += "active";
-	})
+        if (getPageName(element.getAttribute("href")) == pageName) {
+            parent.classList.add("active");
+            setParent(parent);
+        }
+        else {
+            parent.classList.remove("active");
+        }
+    }
+// }
+if(pageName == "dgm3740.quinnnilsson.com") {
+    console.log("hey")
+    elements[0].parentNode.className="active";
 }
-// "use strict";
 
-// var hrefLocation = location.href; 
 
-// var resultsArray = hrefLocation.split("/");
 
-// var numberOfParts = resultsArray.length;
-
-// var pieceIwant = resultsArray[numberOfParts-1];
-// window.console.log('>>>>>>>>'+ pieceIwant);
-
-// var test = document.querySelectorAll("ul#primaryNav li a");
-
-// var i;
-// for (i=0; i < test.length; i++) {
-// 	var myPage = test[i].getAttribute("href");
-// 	window.console.log(myPage);	
-	
-// 	if (pieceIwant === myPage) {
-// 		test[i].parentNode.className ="active";
-// 		//test[i].parentNode.parentNode.parentNode.className ="parent";
-// 		if (test[i].parentNode.parentNode.parentNode.tagname === "li") {
-// 			test[i].parentNode.parentNode.parentNode.className ="parent";
-// 		}
-// 	} else {
-// 		test[i].parentNode.className = "";
-// 	} 
-
-	/* trying to get menu item to activate on page load
-	if (myPage === "") {
-		numberOfParts[0].parentNode.className = "active";
-	}
-	*/
-
-}//end of loop
+})();
