@@ -3,7 +3,7 @@
 "use strict";
 let found = false;
 (function () {
-let elements = document.querySelectorAll("#primaryNav li a");
+let elements = document.querySelectorAll("primaryNav li a");
 let getPageName = function (str) {
     let queryIgnore = /\/+|[?\#].*$/;
     let parts = str.split(queryIgnore);
