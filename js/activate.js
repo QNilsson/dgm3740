@@ -3,19 +3,19 @@
 "use strict";
 let found = false;
 (function () {
-let elements = document.querySelectorAll('ul#primaryNav li a');
+let elements = document.querySelectorAll('#primaryNav li a');
 let getPageName = function (str) {
     let queryIgnore = /\/+|[?\#].*$/;
     let parts = str.split(queryIgnore);
     let pageName;
     while (!pageName && parts.length) pageName = parts.pop();
     return pageName;
+    
 };
 let setParent = function (element) {
     let listElement = element.parentNode;
     if (listElement.tagName == "UL" && listElement.id != 'primaryNav') {
         listElement.parentNode.classList.add("parent");
-        console.log("hey yo");
     }
 };
 let pageName = getPageName(document.location.href);
@@ -26,11 +26,13 @@ console.log(pageName)
         let parent = element.parentNode;
 
         if (getPageName(element.getAttribute("href")) == pageName) {
+            console.log(pageName)
             parent.classList.add("active");
             setParent(parent);
         }
         else {
             parent.classList.remove("active");
+            console.log(pageName)
         }
     }
 // }

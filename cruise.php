@@ -92,43 +92,44 @@
 
     <?php include '_bot.php'; ?> 
 
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "TravelAgency",
-            "name": "Cabot Cruises",
-            "description": "Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.",
-            "openingHours": "Mo-Fr 09:00-16:00",
-            "telephone": "5555555555",
-            "faxNumber": "+1385559876",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "123 Main St",
-                "addressLocality": "Orlando",
-                "addressRegion": "FL"
-            },
-            "image": "http://fullpath.com/logo1x.png",
-            "priceRange": "$500 to $4000"
-        }
-        }
-    </script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/toggleMenu.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".mySlider").slick({
-                autoplay: true,
-                dots: true,
-                arrows: false,
-                cssEase: "ease-out",
-                speed: 1000,
-                fade: false,
-                autoplaySpeed: 5000
-            });
-        });
-    </script>
+    <script  type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "TravelAgency",
+      "name": "Cabot Cruises",
+      "description": "Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.",
+      "openingHours": "Mo-Fr 09:00-16:00",
+      "telephone": "5555555555",
+      "faxNumber":"+1385559876",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main St",
+        "addressLocality": "Orlando",
+        "addressRegion": "FL"
+      },
+      "image": "http://fullpath.com/logo1x.png",
+      "priceRange":"$500 to $4000"
+    }
+}
+  </script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/toggleMenu.js"></script>
+  <script src="js/activate.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".mySlider").slick({
+        autoplay: true,
+        dots: true,
+        arrows: false,
+        cssEase: "ease-out",
+        speed: 1000,
+        fade: false,
+        autoplaySpeed: 5000
+      });
+    });
+  </script>
 
 </body>
 
