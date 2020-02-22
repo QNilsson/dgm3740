@@ -113,12 +113,12 @@ nav {
         font-family: $body;
     }
 
-    ul li.active a {
+    .active {
         background-color: #f5aeae;
     }
 
     .parent{
-        background:blue;
+        background-color:orange;
     }
 
     ul li ul li a {
