@@ -3,7 +3,7 @@
 "use strict";
 let found = false;
 (function () {
-let elements = document.querySelectorAll("primaryNav li a");
+let elements = document.querySelectorAll("ul li a");
 let getPageName = function (str) {
     let queryIgnore = /\/+|[?\#].*$/;
     let parts = str.split(queryIgnore);
@@ -15,6 +15,7 @@ let setParent = function (element) {
     let listElement = element.parentNode;
     if (listElement.tagName == "UL" && listElement.id != 'primaryNav') {
         listElement.parentNode.classList.add("parent");
+        console.log("hey yo");
     }
 };
 let pageName = getPageName(document.location.href);
