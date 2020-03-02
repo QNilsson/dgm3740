@@ -2,10 +2,13 @@
 <header class="clearfix">
         <div class="header-wrapper">
           <!--srcset="/01/images/logo.png 768w, /01/images/logo.png 1080w"-->
+          <div class="wayfind">
           <a href = "index.php"><img src="images/logo3x.png" srcset="images/logo1x.png 1x, images/logo3x.png 2x, images/logo3x.png 3x"
             class="logo" alt="logo"></ahref>
+            <h3 class="wayfind">Cabot Cruises</h3>
+            </div>
             <h3 class="number"><a href="tel:555-555-5555">555-555-5555</a></h3>
-         
+           
         </div>
         <!--end header wrapper-->
       </header>
