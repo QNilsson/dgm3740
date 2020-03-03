@@ -348,7 +348,7 @@ header {
     header .header-wrapper .wayfind {
       color: #0063B2;
       font-family: "Megrim", cursive; }
-      header .header-wrapper .wayfind .h1 {
+      header .header-wrapper .wayfind h2 {
         padding-top: 30px;
         padding-left: 5px;
         border: 1px solid red; }
